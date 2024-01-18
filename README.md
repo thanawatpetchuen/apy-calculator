@@ -21,7 +21,13 @@ UNISWAP_SUBGRAPH_URL=https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3
 ## Running the app with Docker compose
 
 ```bash
-$ docker compose -f docker-compose.dev.yaml up
+$ yarn docker
+```
+
+## Running the app with Docker compose (local code)
+
+```bash
+$ yarn docker:dev
 ```
 
 ## Running the app
