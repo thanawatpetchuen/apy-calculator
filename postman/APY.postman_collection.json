@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "c9ea6b04-4483-4c0e-9cbd-7c22c3a29618",
+		"name": "APY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20453929"
+	},
+	"item": [
+		{
+			"name": "Get APY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/apy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pool",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pool",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pool"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Pool",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\": \"0xcbcdf9626bc03e24f779434178a73a0b4bad62ed\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/pool",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pool"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Pool",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

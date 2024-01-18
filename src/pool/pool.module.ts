@@ -10,5 +10,6 @@ import { Pool, PoolSchema } from 'src/schemas/pool.schema';
   ],
   controllers: [PoolController],
   providers: [PoolService],
+  exports: [PoolService],
 })
 export class PoolModule {}

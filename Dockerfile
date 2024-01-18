@@ -1,5 +1,5 @@
 # Use the official Node.js 18 image as the base image
-FROM node:18 AS builder
+FROM node:18-bullseye-slim AS builder
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -16,8 +16,8 @@ COPY . .
 # Build the NestJS application
 RUN yarn build
 
-# Use Node.js 18 image for the production image
-FROM node:18
+# Use Google Node.js 18 image for the production image
+FROM node:18-bullseye-slim
 
 # Set the working directory inside the container
 WORKDIR /app
